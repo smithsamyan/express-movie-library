@@ -1,5 +1,5 @@
 {
-  "name": "movie_server",
+  "name": "express-movie-library",
   "version": "1.0.0",
   "scripts": {
     "build": "babel src -d dist --source-maps",
