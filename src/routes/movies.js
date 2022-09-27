@@ -24,7 +24,7 @@ router.get("/movies", (req, res) => {
 
 router.get("/movies/:id", (req, res) => {
   try {
-    console.log("No idea");
+    req.params.id === '0' ? console.log("No idea") : console.log('Get me out of here');
   } catch (error) {
     res.status(500).send({ message: "Interval server error" });
   }
