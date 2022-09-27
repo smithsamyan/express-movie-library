@@ -25,6 +25,6 @@ describe("Movie API Tests", () => {
 
   it("GET /api/v1/movies/3 returns a status 404", async () => {
     const response = await request(server).get("/api/v1/movies/3");
-    expect(response.status).to.equal(200);
+    expect(response.status).to.equal(404);
   });
 });
